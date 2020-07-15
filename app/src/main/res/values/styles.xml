@@ -1,0 +1,32 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/chat_background</item>
+        <item name="colorPrimaryDark">@color/chat_background</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="colorAccent">@color/chat_background</item>
+    </style>
+
+    <style name="AppTheme.WhiteRec">
+        <item name="colorAccent">@color/chat_background</item> <!-- Whatever color you want-->
+    </style>
+
+    <style name="AppTheme.DarkRec">
+        <item name="colorAccent">@color/message_text</item> <!-- Whatever color you want-->
+    </style>
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+</resources>

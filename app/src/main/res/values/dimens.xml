@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="grid_layout_margi">1dp</dimen>
+    <dimen name="story_profile_border">3dp</dimen>
+    <dimen name="no_story_profile_border">0dp</dimen>
+
+</resources>

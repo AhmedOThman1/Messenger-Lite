@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fullscreen_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.messengerlite.ui.activities.PhotoActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/image_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/back_name"
+        android:layout_centerInParent="true"
+        android:keepScreenOn="true"
+        android:src="@drawable/me_so"/>
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+
+        <LinearLayout
+            android:id="@+id/back_name"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/back_white" />
+            <TextView
+                android:id="@+id/acc_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/chat_background"
+                android:textStyle="bold"
+                android:text="Ahmed Osman"
+                android:layout_gravity="center_vertical"
+                />
+
+
+        </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/replay_message_design"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/chat_background"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp">
+
+    <TextView
+        android:id="@+id/replay_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Replying to yourself"
+        android:textColor="@color/message_text"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/replay_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/replay_to"
+        android:layout_toStartOf="@id/close_replay_message"
+        android:text="Whats up baby ?"
+        android:textColor="@color/message_text"
+        android:textSize="12sp"
+        android:ellipsize="end"
+        android:maxLines="1"/>
+
+    <ImageView
+        android:id="@+id/close_replay_message"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_close"
+        android:layout_marginStart="8dp"/>
+</RelativeLayout>

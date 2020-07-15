@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.MainActivity">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/chatRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/chat_background"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="8dp"
+            android:focusableInTouchMode="false"
+            android:isScrollContainer="false"
+            android:scrollbars="none"
+            android:layout_above="@id/chat_bottom_tools"
+            android:layout_below="@id/toolbar"/>
+
+        <include layout="@layout/message_custom_actionbar"/>
+
+        <include layout="@layout/chat_bottom_tools"
+            android:id="@+id/chat_bottom_tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <View
+        android:id="@+id/clickToCancel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <include
+        layout="@layout/react_design"
+        android:visibility="gone" />
+
+    <include
+        layout="@layout/message_snack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:visibility="gone" />
+</FrameLayout>

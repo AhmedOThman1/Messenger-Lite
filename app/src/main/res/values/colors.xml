@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#673AB7</color>
+    <color name="colorPrimaryDark">#152E9E</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="chat_background">#FFF</color>
+    <color name="message_text">#000</color>
+    <color name="chat_color">#0099ff</color>
+    <color name="new_message_background">#EEE</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="second_chat_background">#DDD</color>
+    <color name="snack_color">#FFF</color>
+    <color name="reacts_replay">#FFF</color>
+    <color name="message_replay">#606060</color>
+
+
+    <!--
+        <color name="chat_background">#FFF</color>
+        <color name="message_text">#000</color>
+        <color name="new_message_background">#EEE</color>
+        <color name="reacts_replay">#FFF</color>
+        <color name="message_replay">#606060</color>
+
+
+        <color name="chat_background_dark">#000</color>
+        <color name="message_text_dark">#FFF</color>
+        <color name="new_message_background_dark">#505050</color>
+        <color name="reacts_replay_dark">#303030</color>
+        <color name="message_replay_dark">#CCC</color>
+    -->
+
+    <!--  Dark mood :
+                       "new_message_background">505050
+                        "message_text">#FFF
+                        "chat_background">#000-->
+    <!--    mood :
+                    "new_message_background">EEE
+                            "message_text">#000
+                            "chat_background">#FFF-->
+</resources>

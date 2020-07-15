@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.like.LikeButton xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/hahaha"
+    android:id="@+id/icon_item"
+    android:layout_height="48dp"
+    android:layout_width="48dp"
+    app:icon_size="48dp"
+    app:like_drawable="@drawable/like"
+    app:unlike_drawable="@drawable/like" />
